@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "XIAO_Series_Footprints")(type "KiCad")(uri "/home/wiktoro/Studia/AIOTA/UWB_swarm/dev_pcb_kicad/XIAO_Series_Footprints")(options "")(descr ""))
+)

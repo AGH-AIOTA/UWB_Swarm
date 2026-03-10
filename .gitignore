@@ -1,0 +1,43 @@
+# build
+build/
+dist/
+out/
+
+# dependencies
+DW3_QM33_SDK_1.1.1/
+
+# logs
+logs/
+*.log
+
+# environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# system
+.DS_Store
+Thumbs.db
+
+# python
+__pycache__/
+*.pyc
+
+# java
+target/
+*.class
+
+# C / C++
+*.o
+*.out
+*.exe
+
+# temporary
+tmp/
+temp/
+
+# coverage
+coverage/
