@@ -1583,12 +1583,6 @@
 		(uuid "5352738c-7baa-4544-af9e-727f0860ca6b")
 	)
 	(junction
-		(at 66.04 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d88532f-4d94-4f57-afea-ec5324ab12b5")
-	)
-	(junction
 		(at 114.3 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1784,16 +1778,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 58.42) (xy 71.12 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4dc2c0d2-2ce4-49a1-a08e-e8aa1eb04d5d")
-	)
-	(wire
-		(pts
 			(xy 92.71 88.9) (xy 91.44 88.9)
 		)
 		(stroke
@@ -1851,16 +1835,6 @@
 			(type default)
 		)
 		(uuid "625a87de-921f-4960-998d-fdb0c1c6633b")
-	)
-	(wire
-		(pts
-			(xy 66.04 58.42) (xy 68.58 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68f471ef-cc20-4b25-8692-7660a307a53a")
 	)
 	(wire
 		(pts
@@ -1981,6 +1955,26 @@
 			(type default)
 		)
 		(uuid "c02d1ddd-cb2a-4e6c-b81d-fac580120ce2")
+	)
+	(wire
+		(pts
+			(xy 66.04 58.42) (xy 68.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4315ba6-0420-472a-9a98-6d4f42bcae52")
+	)
+	(wire
+		(pts
+			(xy 68.58 58.42) (xy 71.12 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb9097cc-2689-45db-9224-4bc6bd695839")
 	)
 	(wire
 		(pts
@@ -2224,10 +2218,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "143862e5-b363-4e8d-ab46-0b3591f92965")
-		(property "Reference" "D4"
-			(at 94.9325 87.63 0)
+		(property "Reference" "TX"
+			(at 94.742 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2235,7 +2228,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 94.9325 90.17 0)
+			(at 97.79 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2287,7 +2280,7 @@
 		(instances
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "D4")
+					(reference "TX")
 					(unit 1)
 				)
 			)
@@ -2631,72 +2624,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 66.04 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67b54aee-b2ab-4bae-a113-471e0f3a8c77")
-		(property "Reference" "#PWR02"
-			(at 66.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 66.04 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 66.04 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02d0167f-a29a-456f-a5f7-8904abe2aca2")
-		)
-		(instances
-			(project ""
-				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 96.52 88.9 0)
 		(unit 1)
@@ -2704,10 +2631,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "76103505-9287-4a1d-8d7b-369df73d4a6e")
-		(property "Reference" "D2"
-			(at 94.9325 82.55 0)
+		(property "Reference" "SFD"
+			(at 94.234 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,7 +2641,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 94.9325 85.09 0)
+			(at 97.79 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +2693,7 @@
 		(instances
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "D2")
+					(reference "SFD")
 					(unit 1)
 				)
 			)
@@ -2781,10 +2707,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "765fbf0d-dfd5-4350-ba62-d4c0fce31db0")
-		(property "Reference" "D1"
-			(at 94.9325 80.01 0)
+		(property "Reference" "RXOK"
+			(at 93.726 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2792,7 +2717,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 94.9325 82.55 0)
+			(at 97.79 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2844,7 +2769,7 @@
 		(instances
 			(project ""
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "D1")
+					(reference "RXOK")
 					(unit 1)
 				)
 			)
@@ -2913,6 +2838,72 @@
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 68.58 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8727d000-e170-4038-86b0-1c24e25bd0b7")
+		(property "Reference" "#PWR02"
+			(at 68.58 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 68.58 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3a5e63f-baaf-41e5-a2c7-17f74deec5a0")
+		)
+		(instances
+			(project ""
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3168,10 +3159,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e4541fd0-4d9b-41c1-8971-8beefb651efb")
-		(property "Reference" "D3"
-			(at 94.9325 85.09 0)
+		(property "Reference" "RX"
+			(at 94.996 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3179,7 +3169,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 94.9325 87.63 0)
+			(at 97.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3221,7 @@
 		(instances
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "D3")
+					(reference "RX")
 					(unit 1)
 				)
 			)
