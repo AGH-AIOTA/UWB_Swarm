@@ -5,6 +5,126 @@
 	(uuid "01f8a355-0465-4473-b4f6-8671dc17661c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint_Probe"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 1.651 5.842 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Probe"
+				(at 1.651 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point (alternative probe-style design)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Probe_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0.762) (xy 0 0) (xy 0.762 1.27) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.397 0.635) (xy 0.635 1.397) (xy 2.413 3.175) (xy 3.175 2.413) (xy 1.397 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TestPoint_Probe_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1577,16 +1697,46 @@
 		)
 	)
 	(junction
+		(at 124.46 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "139367a5-22ac-4b5e-809b-30a4eef94fec")
+	)
+	(junction
 		(at 106.68 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5352738c-7baa-4544-af9e-727f0860ca6b")
 	)
 	(junction
+		(at 137.16 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7064b695-1609-46b4-a755-e73f210c1877")
+	)
+	(junction
+		(at 160.02 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7285eaa8-4751-4606-8c79-dadf64c0919a")
+	)
+	(junction
 		(at 114.3 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78c99eaa-f19e-4831-bfc0-f99dc72da54c")
+	)
+	(junction
+		(at 116.84 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c33671c-ac24-4108-a03e-bdcf160d02ed")
+	)
+	(junction
+		(at 166.37 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4e77912-3f73-4571-9bd3-74b40c86419f")
 	)
 	(junction
 		(at 106.68 88.9)
@@ -1601,6 +1751,12 @@
 		(uuid "ac548f40-67ea-4c38-8518-e9a1c3a4d687")
 	)
 	(junction
+		(at 113.03 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afaf0907-58a2-4273-8a7c-73e24a681407")
+	)
+	(junction
 		(at 106.68 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1608,7 +1764,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 68.58) (xy 184.15 68.58)
+			(xy 91.44 68.58) (xy 137.16 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1748,7 +1904,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 66.04) (xy 124.46 80.01)
+			(xy 137.16 68.58) (xy 184.15 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "453656d9-343b-491d-a44c-b19b5159d768")
+	)
+	(wire
+		(pts
+			(xy 124.46 66.04) (xy 124.46 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1805,6 +1971,16 @@
 			(type default)
 		)
 		(uuid "592bb2f4-3bd3-4051-b834-092f20a7f2aa")
+	)
+	(wire
+		(pts
+			(xy 124.46 76.2) (xy 124.46 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bdea1d6-05d1-4f73-a8c6-5482a02186ae")
 	)
 	(wire
 		(pts
@@ -1928,6 +2104,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 73.66) (xy 180.34 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b41d506e-b74c-4c2c-910f-750e5b2bee41")
+	)
+	(wire
+		(pts
 			(xy 45.72 86.36) (xy 44.45 86.36)
 		)
 		(stroke
@@ -1975,6 +2161,16 @@
 			(type default)
 		)
 		(uuid "cb9097cc-2689-45db-9224-4bc6bd695839")
+	)
+	(wire
+		(pts
+			(xy 160.02 71.12) (xy 182.88 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd590fb3-aafb-4320-a415-dcabccdc0347")
 	)
 	(wire
 		(pts
@@ -2028,7 +2224,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 73.66) (xy 180.34 73.66)
+			(xy 91.44 73.66) (xy 166.37 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2068,13 +2264,80 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 71.12) (xy 182.88 71.12)
+			(xy 91.44 71.12) (xy 160.02 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "feb45a99-008e-4919-8a62-4557d1b580de")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 137.16 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "093f856f-2a03-4075-a482-2881e85a11f1")
+		(property "Reference" "MISO1"
+			(at 140.97 65.7224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MISO"
+			(at 140.97 68.2624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 137.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+		)
+		(instances
+			(project ""
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "MISO1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2219,7 +2482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "143862e5-b363-4e8d-ab46-0b3591f92965")
-		(property "Reference" "TX"
+		(property "Reference" "TX1"
 			(at 94.742 93.98 0)
 			(effects
 				(font
@@ -2280,7 +2543,7 @@
 		(instances
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "TX")
+					(reference "TX1")
 					(unit 1)
 				)
 			)
@@ -2415,6 +2678,73 @@
 			(project ""
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 160.02 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52f8f1b1-6cd5-4225-9543-6cc75d3609d1")
+		(property "Reference" "CLK1"
+			(at 163.83 68.2624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CLK"
+			(at 163.83 70.8024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 160.02 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+		)
+		(instances
+			(project ""
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "CLK1")
 					(unit 1)
 				)
 			)
@@ -2632,7 +2962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76103505-9287-4a1d-8d7b-369df73d4a6e")
-		(property "Reference" "SFD"
+		(property "Reference" "SFD1"
 			(at 94.234 88.9 0)
 			(effects
 				(font
@@ -2693,7 +3023,7 @@
 		(instances
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "SFD")
+					(reference "SFD1")
 					(unit 1)
 				)
 			)
@@ -2708,7 +3038,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "765fbf0d-dfd5-4350-ba62-d4c0fce31db0")
-		(property "Reference" "RXOK"
+		(property "Reference" "RXOK1"
 			(at 93.726 86.36 0)
 			(effects
 				(font
@@ -2769,7 +3099,7 @@
 		(instances
 			(project ""
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "RXOK")
+					(reference "RXOK1")
 					(unit 1)
 				)
 			)
@@ -2904,6 +3234,73 @@
 			(project ""
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 166.37 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88c9b17c-2bea-482d-87c9-62e181e5d4fb")
+		(property "Reference" "MOSI1"
+			(at 170.18 70.8024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOSI"
+			(at 170.18 73.3424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 171.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 166.37 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+		)
+		(instances
+			(project ""
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "MOSI1")
 					(unit 1)
 				)
 			)
@@ -3048,6 +3445,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 116.84 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c08af074-3b1b-4bcc-b584-6c0a3b05013e")
+		(property "Reference" "WAKEUP1"
+			(at 120.65 84.7724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Probe"
+			(at 120.65 87.3124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 121.92 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 116.84 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+		)
+		(instances
+			(project ""
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "WAKEUP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 113.03 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7d778aa-339b-4cf0-804d-027361bdffce")
+		(property "Reference" "EXTON1"
+			(at 116.84 80.9624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Probe"
+			(at 116.84 83.5024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 118.11 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 113.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f110626-d159-49e7-bdbf-0cfa08e9c655")
+		)
+		(instances
+			(project ""
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "EXTON1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP")
 		(at 127 74.93 0)
 		(unit 1)
@@ -3160,7 +3691,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4541fd0-4d9b-41c1-8971-8beefb651efb")
-		(property "Reference" "RX"
+		(property "Reference" "RX1"
 			(at 94.996 91.44 0)
 			(effects
 				(font
@@ -3221,7 +3752,7 @@
 		(instances
 			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
-					(reference "RX")
+					(reference "RX1")
 					(unit 1)
 				)
 			)
@@ -3289,6 +3820,73 @@
 			(project ""
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 124.46 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef50ad1c-4a22-44ce-b80b-dfeff5a96a43")
+		(property "Reference" "IRQ1"
+			(at 128.27 73.3424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Probe"
+			(at 128.27 75.8824 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 129.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "782c3b88-d74c-4c81-8f00-0347cc5f5e8b")
+		)
+		(instances
+			(project "dev_pcb"
+				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
+					(reference "IRQ1")
 					(unit 1)
 				)
 			)
