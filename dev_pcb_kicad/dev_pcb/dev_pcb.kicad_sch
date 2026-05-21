@@ -2331,7 +2331,7 @@
 			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "MISO1")
 					(unit 1)
@@ -2399,7 +2399,7 @@
 			(uuid "f41ccfd7-2b31-4d1a-a00d-cd221cb85abc")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "R2")
 					(unit 1)
@@ -2675,7 +2675,7 @@
 			(uuid "86fafe8b-8024-48f2-a359-79e5bf121863")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR05")
 					(unit 1)
@@ -2739,10 +2739,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e931")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "CLK1")
 					(unit 1)
@@ -2878,7 +2878,7 @@
 			(uuid "fcb079a0-015f-414b-82ea-059f0c243d97")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "DWM1")
 					(unit 1)
@@ -3097,7 +3097,7 @@
 			(uuid "a08dbfba-ccfd-4be3-b764-5686fe911d15")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "RXOK1")
 					(unit 1)
@@ -3231,7 +3231,7 @@
 			(uuid "d3a5e63f-baaf-41e5-a2c7-17f74deec5a0")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR02")
 					(unit 1)
@@ -3295,10 +3295,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e932")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "MOSI1")
 					(unit 1)
@@ -3368,7 +3368,7 @@
 			(uuid "47ae5bbc-e2f1-4032-8db2-89c2faa120cd")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "R1")
 					(unit 1)
@@ -3500,10 +3500,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e930")
+			(uuid "5a7bbee2-99a8-4288-96a5-4cdb0b21e933")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "WAKEUP1")
 					(unit 1)
@@ -3570,7 +3570,7 @@
 			(uuid "0f110626-d159-49e7-bdbf-0cfa08e9c655")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "EXTON1")
 					(unit 1)
@@ -3674,7 +3674,7 @@
 			(uuid "8f9c8eb6-fad0-4bde-968e-9505aafd56d0")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "U2")
 					(unit 1)
@@ -3817,7 +3817,7 @@
 			(uuid "dba72c6b-11dc-4950-8a2e-0926bf00e0d3")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR04")
 					(unit 1)
@@ -3950,7 +3950,7 @@
 			(uuid "b6789fc2-59d3-4c86-afa0-65101e139eb8")
 		)
 		(instances
-			(project ""
+			(project "dev_pcb"
 				(path "/01f8a355-0465-4473-b4f6-8671dc17661c"
 					(reference "#PWR03")
 					(unit 1)

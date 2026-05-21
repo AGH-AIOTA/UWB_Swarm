@@ -3,17 +3,13 @@
 #define APP_NAME "SS TWR RESP v1.0"
 
 // connection pins
-const uint8_t PIN_RST = D3; // reset pin
-const uint8_t PIN_IRQ = D0; // irq pin
-
-const uint8_t PIN_SS = D7; // spi select pin
+const uint8_t PIN_RST = 27; // reset pin
+const uint8_t PIN_IRQ = 34; // irq pin
+const uint8_t PIN_SS = 4; // spi select pin
 
 /* Default communication configuration. We use default non-STS DW mode. */
-
-// doczytać jakie są inne konfiguracje
 static dwt_config_t config = {
         5,               /* Channel number. */
-        // może inny ma lepszą dokładność
         DWT_PLEN_128,    /* Preamble length. Used in TX only. */
         DWT_PAC8,        /* Preamble acquisition chunk size. Used in RX only. */
         9,               /* TX preamble code. Used in TX only. */
@@ -29,19 +25,10 @@ static dwt_config_t config = {
 };
 
 /* Default antenna delay values for 64 MHz PRF. See NOTE 2 below. */
-// o ten czas kompensowany jest timestamp
-#define TX_ANT_DLY 16395
-#define RX_ANT_DLY 16395
+#define TX_ANT_DLY 16385
+#define RX_ANT_DLY 16385
 
 /* Frames used in the ranging process. See NOTE 3 below. */
-
-// bajty 0-1 frame controll
-// bajt 2 inkrememntowany numer sekwencji
-// bajty 3-4 PAN ID
-// bajty 5-6 adres docelowy
-// bajty 7-8 adres źródłowy
-// bajt 9 kod funkcji
-////////////////////////////////-0------1--2----3------4----5----6----7----8----9---...........
 static uint8_t rx_poll_msg[] = {0x41, 0x88, 0, 0xCA, 0xDE, 'W', 'A', 'V', 'E', 0xE0, 0, 0};
 static uint8_t tx_resp_msg[] = {0x41, 0x88, 0, 0xCA, 0xDE, 'V', 'E', 'W', 'A', 0xE1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 /* Length of the common part of the message (up to and including the function code, see NOTE 3 below). */
@@ -73,9 +60,7 @@ static uint32_t status_reg = 0;
 #define POLL_RX_TO_RESP_TX_DLY_UUS 650
 #endif //NRF52840_XXAA
 
-// this was changed from 450 to 800, poczytać czemu
-// czas od odbioru do nadania, im krótszy tym lepszy, ale może być problem z tym żeby zdążyć z nadaniem odpowiedzi
-#define POLL_RX_TO_RESP_TX_DLY_UUS 800
+#define POLL_RX_TO_RESP_TX_DLY_UUS 450
 
 /* Timestamps of frames transmission/reception. */
 static uint64_t poll_rx_ts;
@@ -96,7 +81,7 @@ void setup() {
 
   delay(2); // Time needed for DW3000 to start up (transition from INIT_RC to IDLE_RC, or could wait for SPIRDY event)
 
-  while (!dwt_checkidlerc()) // Need to make sure DW IC is in IDLE_RC before proceeding
+  while (!dwt_checkidlerc()) // Need to make sure DW IC is in IDLE_RC before proceeding 
   {
     UART_puts("IDLE FAILED\r\n");
     while (1) ;
@@ -127,7 +112,7 @@ void setup() {
 
     /* Next can enable TX/RX states output on GPIOs 5 and 6 to help debug, and also TX/RX LEDs
      * Note, in real low power applications the LEDs should not be used. */
-    dwt_setlnapamode(DWT_LNA_ENABLE | DWT_PA_ENABLE);
+    dwt_setlnapamode(DWT_LNA_ENABLE | DWT_PA_ENABLE); 
 }
 
 void loop() {
